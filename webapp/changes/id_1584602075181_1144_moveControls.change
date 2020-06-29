@@ -1,0 +1,77 @@
+{
+	"fileName": "id_1584602075181_1144_moveControls",
+	"fileType": "change",
+	"changeType": "moveControls",
+	"moduleName": "",
+	"reference": "ZJRI44P14_L0130.Component",
+	"packageName": "$TMP",
+	"content": {
+		"movedElements": [{
+			"selector": {
+				"id": "ZJRI44P14_L0130::sap.suite.ui.generic.template.ListReport.view.ListReport::xJRIx44P141003CS--ActionxJRIx44P141003CS1button",
+				"idIsLocal": false
+			},
+			"sourceIndex": 2,
+			"targetIndex": 0
+		}],
+		"source": {
+			"selector": {
+				"aggregation": "content",
+				"type": "sap.m.OverflowToolbar",
+				"id": "ZJRI44P14_L0130::sap.suite.ui.generic.template.ListReport.view.ListReport::xJRIx44P141003CS--template::ListReport::TableToolbar",
+				"idIsLocal": false
+			}
+		},
+		"target": {
+			"selector": {
+				"aggregation": "content",
+				"type": "sap.m.OverflowToolbar",
+				"id": "ZJRI44P14_L0130::sap.suite.ui.generic.template.ListReport.view.ListReport::xJRIx44P141003CS--template::ListReport::TableToolbar",
+				"idIsLocal": false
+			}
+		}
+	},
+	"selector": {
+		"id": "ZJRI44P14_L0130::sap.suite.ui.generic.template.ListReport.view.ListReport::xJRIx44P141003CS--template::ListReport::TableToolbar",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/ZJRI44P14_L0130/changes/",
+	"projectId": "ZJRI44P14_L0130",
+	"creation": "2020-03-19T07:14:41.800Z",
+	"originalLanguage": "JA",
+	"conditions": {},
+	"context": "",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.75.0",
+		"sourceChangeFileName": "",
+		"compositeCommand": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {
+		"source": {
+			"id": "ZJRI44P14_L0130::sap.suite.ui.generic.template.ListReport.view.ListReport::xJRIx44P141003CS--template::ListReport::TableToolbar",
+			"idIsLocal": false
+		},
+		"target": {
+			"id": "ZJRI44P14_L0130::sap.suite.ui.generic.template.ListReport.view.ListReport::xJRIx44P141003CS--template::ListReport::TableToolbar",
+			"idIsLocal": false
+		},
+		"movedElements": [{
+			"id": "ZJRI44P14_L0130::sap.suite.ui.generic.template.ListReport.view.ListReport::xJRIx44P141003CS--ActionxJRIx44P141003CS1button",
+			"idIsLocal": false
+		}]
+	},
+	"validAppVersions": {
+		"creation": "1.0.0",
+		"from": "1.0.0",
+		"to": "1.0.0"
+	},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}
