@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
 	<edmx:Reference Uri="/sap/bc/ui5_ui5/ui2/ushell/resources/sap/ushell/components/factsheet/vocabularies/UI.xml">
 		<edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
 	</edmx:Reference>
 	<edmx:Reference Uri="/sap/opu/odata/jri/44P141003CS_CDS/$metadata">
-		<edmx:Include Alias="44P141003CS_CDS" Namespace="44P141003CS_CDS"/>
+		<edmx:Include Alias="Metadata" Namespace="xJRIx44P141003CS_CDS"/>
 	</edmx:Reference>
 	<edmx:DataServices>
 		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="ZJRI44P14_L0130.44P141003CS_CDS">
@@ -12,15 +11,171 @@
                 Entity Type from chosen collection 
                 ================================================================================-->
 			<Annotations Target="xJRIx44P141003CS_CDS.xJRIx44P141003CSType">
+				<Annotation Term="UI.Identification">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue String="受注伝票番号" Property="Label"/>
+							<PropertyValue Property="Value" Path="vbeln"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="販売伝票" Property="Label"/>
+							<PropertyValue Property="Value" Path="key_vbeln"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="明細番号" Property="Label"/>
+							<PropertyValue Property="Value" Path="posnr"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="販売伝票明細" Property="Label"/>
+							<PropertyValue Property="Value" Path="key_posnr"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="参照伝票番号" Property="Label"/>
+							<PropertyValue Property="Value" Path="ap_vgbel"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="レコード登録日付" Property="Label"/>
+							<PropertyValue Property="Value" Path="erdat"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="参照明細番号" Property="Label"/>
+							<PropertyValue Property="Value" Path="vgpos"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="営業所" Property="Label"/>
+							<PropertyValue Property="Value" Path="vkbur"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="営業グループ" Property="Label"/>
+							<PropertyValue Property="Value" Path="vkgrp"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="当社担当" Property="Label"/>
+							<PropertyValue Property="Value" Path="kvgr1"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="出荷先" Property="Label"/>
+							<PropertyValue Property="Value" Path="kunwe_sdh"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="名称（１行目）" Property="Label"/>
+							<PropertyValue Property="Value" Path="kunwe_nm"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="名称（２行目）" Property="Label"/>
+							<PropertyValue Property="Value" Path="kunwe_nm2"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="得意先参照" Property="Label"/>
+							<PropertyValue Property="Value" Path="bstnk"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="配送引取区分" Property="Label"/>
+							<PropertyValue Property="Value" Path="hshtkbn_sdh"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="配送引取区分名称" Property="Label"/>
+							<PropertyValue Property="Value" Path="hshtkbn_sdh_txt"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="特注区分" Property="Label"/>
+							<PropertyValue Property="Value" Path="tokuchu_sdh"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="特注区分名称" Property="Label"/>
+							<PropertyValue Property="Value" Path="tokuchu_sdh_txt"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="品切れ理由" Property="Label"/>
+							<PropertyValue Property="Value" Path="opt_stk_sdi"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="得意先発注番号(明細)" Property="Label"/>
+							<PropertyValue Property="Value" Path="bstkd"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="品目コード" Property="Label"/>
+							<PropertyValue Property="Value" Path="matnr"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="品目テキスト" Property="Label"/>
+							<PropertyValue Property="Value" Path="maktx"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="当初受注数量(販売単位)" Property="Label"/>
+							<PropertyValue Property="Value" Path="edisr_sdi"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="累積受注数量(販売単位)" Property="Label"/>
+							<PropertyValue Property="Value" Path="kwmeng"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="累積受注数量(販売単位) 変更後" Property="Label"/>
+							<PropertyValue Property="Value" Path="zlmeng"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="販売単位" Property="Label"/>
+							<PropertyValue Property="Value" Path="vrkme"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="プラント(自社または外部)" Property="Label"/>
+							<PropertyValue Property="Value" Path="werks"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="保管場所" Property="Label"/>
+							<PropertyValue Property="Value" Path="lgort"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="出荷ポイント" Property="Label"/>
+							<PropertyValue Property="Value" Path="vstel"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="出荷日付" Property="Label"/>
+							<PropertyValue Property="Value" Path="wadat"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="納入日付" Property="Label"/>
+							<PropertyValue Property="Value" Path="edatu"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="金額・率（数量引）" Property="Label"/>
+							<PropertyValue Property="Value" Path="kwert_ne"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="付記内容" Property="Label"/>
+							<PropertyValue Property="Value" Path="fuki_sdh"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="備考" Property="Label"/>
+							<PropertyValue Property="Value" Path="biko_sdh"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="拒否理由" Property="Label"/>
+							<PropertyValue Property="Value" Path="abgru"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="FAX用品切れ案内送信フラグ" Property="Label"/>
+							<PropertyValue Property="Value" Path="faxflg_sdi"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="受注残管理フラグ" Property="Label"/>
+							<PropertyValue Property="Value" Path="zjczflg"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue String="レコード登録日" Property="Label"/>
+							<PropertyValue Property="Value" Path="ap_erdat"/>
+						</Record>
+					</Collection>
+				</Annotation>
 				<Annotation Term="UI.Facets">
 					<Collection>
 						<Record Type="UI.CollectionFacet">
-							<PropertyValue Property="ID" String="GeneralInformation"/>
-							<PropertyValue Property="Label" String="{@i18n>@GeneralInfoFacetLabel}"/>
+							<PropertyValue String="GeneralInformation" Property="ID"/>
+							<PropertyValue String="{@i18n&gt;@GeneralInfoFacetLabel}" Property="Label"/>
 							<PropertyValue Property="Facets">
 								<Collection>
 									<Record Type="UI.ReferenceFacet">
-										<PropertyValue Property="Label" String="{@i18n>@GeneralInfoFacetLabel}"/>
+										<PropertyValue String="{@i18n&gt;@GeneralInfoFacetLabel}" Property="Label"/>
 										<PropertyValue Property="Target" AnnotationPath="@UI.Identification"/>
 									</Record>
 								</Collection>
