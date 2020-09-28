@@ -23,13 +23,13 @@ sap.ui.controller("ZJRI44P14_L0130.ext.controller.ListReportExt", {
 		var oSmartFilter = this.getView().byId(
 			"ZJRI44P14_L0130::sap.suite.ui.generic.template.ListReport.view.ListReport::xJRIx44P141003CS--listReportFilter");
 		var oDefaultFilter = {
-			erdat: {
+			ap_erdat: {
 				value: null,
 				items: [],
 				ranges: [{
 					"exclude": false,
 					"operation": "GT",
-					"keyField": "erdat",
+					"keyField": "ap_erdat",
 					"value1": DisplayDay,
 					"value2": null
 				}]
@@ -54,18 +54,42 @@ sap.ui.controller("ZJRI44P14_L0130.ext.controller.ListReportExt", {
 		var oSmartFilter = this.getView().byId(
 			"ZJRI44P14_L0130::sap.suite.ui.generic.template.ListReport.view.ListReport::xJRIx44P141003CS--listReportFilter");
 		var oDefaultFilter = {
-			erdat: {
+			ap_erdat: {
 				value: null,
 				items: [],
 				ranges: [{
 					"exclude": false,
 					"operation": "GT",
-					"keyField": "erdat",
+					"keyField": "aperdat",
 					"value1": DisplayDay,
 					"value2": null
 				}]
 			}
 		};
 		oSmartFilter.setFilterData(oDefaultFilter);
-	}
+	},
+	
+	onInitSmartFilterBarExtension: function (oEvent) {					
+		//URL連携したパラメータの取得				
+		var oUrlPara = " ";				
+		var oSmartFilter = this.getView().byId(				
+			"ZJRI44P14_L0130::sap.suite.ui.generic.template.ListReport.view.ListReport::xJRIx44P141003CS--listReportFilter");	
+		if (oUrlPara) {				
+			//Filterの定義			
+			var oDefaultFilter = {			
+				opt_stk_sdi: {		
+					value: null,	
+					items: [],	
+					ranges: [{	
+						exclude: false,
+						operation: "NE",
+						keyField: "opt_stk_sdi",
+						value1: oUrlPara,
+						value2: null
+					}]	
+				}		
+			};			
+			oSmartFilter.setFilterData(oDefaultFilter);			
+		}				
+	}					
 });
