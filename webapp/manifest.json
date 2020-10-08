@@ -137,6 +137,15 @@
 							}
 						}
 					}
+				},
+				"sap.ui.viewExtensions": {
+					"sap.suite.ui.generic.template.ListReport.view.ListReport": {
+						"GridTableColumnsExtension|xJRIx44P141003CS": {
+							"type": "XML",
+							"className": "sap.ui.core.Fragment",
+							"fragmentName": "ZJRI44P14_L0130.ext.view.kwert_ne"
+						}
+					}
 				}
 			}
 		},
