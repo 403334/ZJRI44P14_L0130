@@ -4,7 +4,7 @@
         <Label text="金額・率（数量引）" />
             <table:customData>
                  <core:CustomData key="p13nData"
-                 value='\{"columnKey": "金額・率（数量引）", "leadingProperty":"kwert_ne", "columnIndex" : "26"}' />
+                 value='\{"columnKey": "金額・率（数量引）", "leadingProperty":"kwert_ne", "columnIndex" : "27"}' />
             </table:customData>
        </table:Column>
 </core:FragmentDefinition>

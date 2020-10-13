@@ -78,6 +78,10 @@
 							<PropertyValue Property="Value" Path="opt_stk_sdi"/>
 						</Record>
 						<Record Type="UI.DataField">
+							<PropertyValue Property="Label" String="品切れコメント"/>
+							<PropertyValue Property="Value" Path="comment_sdi"/>
+						</Record>
+						<Record Type="UI.DataField">
 							<PropertyValue Property="Label" String="得意先発注番号(明細)"/>
 							<PropertyValue Property="Value" Path="bstkd"/>
 						</Record>
@@ -163,11 +167,11 @@
 					<Collection>
 						<Record Type="UI.CollectionFacet">
 							<PropertyValue String="GeneralInformation" Property="ID"/>
-							<PropertyValue String="{@i18n&gt;@GeneralInfoFacetLabel}" Property="Label"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;詳細情報}"/>
 							<PropertyValue Property="Facets">
 								<Collection>
 									<Record Type="UI.ReferenceFacet">
-										<PropertyValue String="{@i18n&gt;@GeneralInfoFacetLabel}" Property="Label"/>
+										<PropertyValue Property="Label" String="{@i18n&gt;@GeneralInfoFacetLabel}"/>
 										<PropertyValue Property="Target" AnnotationPath="@UI.Identification"/>
 									</Record>
 								</Collection>
