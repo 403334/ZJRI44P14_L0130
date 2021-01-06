@@ -95,7 +95,7 @@
 						</Record>
 						<Record Type="UI.DataField">
 							<PropertyValue String="当初受注数量(販売単位)" Property="Label"/>
-							<PropertyValue Property="Value" Path="edisr_sdi"/>
+							<PropertyValue Property="Value" Path="iniorder_sdi"/>
 						</Record>
 						<Record Type="UI.DataField">
 							<PropertyValue String="累積受注数量(販売単位)" Property="Label"/>
@@ -146,8 +146,8 @@
 							<PropertyValue Property="Value" Path="abgru"/>
 						</Record>
 						<Record Type="UI.DataField">
-							<PropertyValue String="FAX用品切れ案内送信フラグ" Property="Label"/>
-							<PropertyValue Property="Value" Path="faxflg_sdi"/>
+							<PropertyValue String="FAX用品切れ案内ステータス" Property="Label"/>
+							<PropertyValue Property="Value" Path="faxsst_sdi"/>
 						</Record>
 						<Record Type="UI.DataField">
 							<PropertyValue String="受注残管理フラグ" Property="Label"/>
