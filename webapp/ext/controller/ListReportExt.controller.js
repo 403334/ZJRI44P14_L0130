@@ -26,13 +26,7 @@ sap.ui.controller("ZJRI44P14_L0130.ext.controller.ListReportExt", {
 			ap_erdat: {
 				value: null,
 				items: [],
-				ranges: [{
-					"exclude": false,
-					"operation": "GT",
-					"keyField": "ap_erdat",
-					"value1": DisplayDay,
-					"value2": null
-				}]
+				ranges: [{ "exclude": false, "operation": "GT",	"keyField": "ap_erdat",	"value1": DisplayDay, "value2": null }]
 			}
 		};
 		oSmartFilter.setFilterData(oDefaultFilter);
@@ -57,37 +51,39 @@ sap.ui.controller("ZJRI44P14_L0130.ext.controller.ListReportExt", {
 			ap_erdat: {
 				value: null,
 				items: [],
-				ranges: [{
-					"exclude": false,
-					"operation": "GT",
-					"keyField": "aperdat",
-					"value1": DisplayDay,
-					"value2": null
-				}]
+				ranges: [{ "exclude": false, "operation": "GT", "keyField": "aperdat", "value1": DisplayDay,"value2": null }]
 			}
 		};
 		oSmartFilter.setFilterData(oDefaultFilter);
 	},
 	
 	onInitSmartFilterBarExtension: function (oEvent) {					
-		//URL連携したパラメータの取得				
+		//URL連携したパラメータの取得
 		var oUrlPara = " ";				
 		var oSmartFilter = this.getView().byId(				
 			"ZJRI44P14_L0130::sap.suite.ui.generic.template.ListReport.view.ListReport::xJRIx44P141003CS--listReportFilter");	
 		if (oUrlPara) {				
-			//Filterの定義			
-			var oDefaultFilter = {			
+			//Filterの定義
+			var oDefaultFilter = {	
+			    // 品切れ理由				
 				opt_stk_sdi: {		
 					value: null,	
 					items: [],	
-					ranges: [{	
-						exclude: false,
-						operation: "NE",
-						keyField: "opt_stk_sdi",
-						value1: oUrlPara,
-						value2: null
-					}]	
-				}		
+					ranges: [{ exclude: true, operation: "EQ", keyField: "opt_stk_sdi", value1: oUrlPara, value2: null }]	
+				},
+			    //販売伝票タイプ 
+				auart: {		
+					value: null,	
+					items: [],	
+					ranges: [{ exclude: false,	operation: "EndsWith", keyField: "auart", value1: "0", value2: null	}]	
+				},	
+			    //拒否理由
+				abgru: {		
+					value: null,	
+					items: [],	
+					ranges: [ { exclude: true, operation: "EQ", keyField: "abgru", value1: "ZZ", value2: null } ,
+				          	  { exclude: true, operation: "EQ", keyField: "abgru", value1: "E9", value2: null } ]
+				}
 			};			
 			oSmartFilter.setFilterData(oDefaultFilter);			
 		}				

@@ -10,25 +10,25 @@
 			<Annotations Target="xJRIx44P141003CS_CDS.xJRIx44P141003CSType">
 				<Annotation Term="UI.Identification">
 					<Collection>
-						<Record Type="UI.DataField"><PropertyValue Property="Label" String="販売伝票"/><PropertyValue Property="Value" Path="vbeln"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="受注伝票番号"/><PropertyValue Property="Value" Path="vbeln"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="明細番号"/><PropertyValue Property="Value" Path="posnr"/></Record>
-						<Record Type="UI.DataField"><PropertyValue Property="Label" String="レコード登録日付"/><PropertyValue Property="Value" Path="erdat"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="登録日付"/><PropertyValue Property="Value" Path="erdat"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="販売伝票タイプ"/><PropertyValue Property="Value" Path="auart"/></Record>
-						<Record Type="UI.DataField"><PropertyValue Property="Label" String="得意先参照（明細）"/><PropertyValue Property="Value" Path="bstkd"/></Record>
-						<Record Type="UI.DataField"><PropertyValue Property="Label" String="品目"/><PropertyValue Property="Value" Path="matnr"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="得意先発注番号(明細)"/><PropertyValue Property="Value" Path="bstkd"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="品目コード"/><PropertyValue Property="Value" Path="matnr"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="正味額＋税"/><PropertyValue Property="Value" Path="netwr_sdi"/></Record>
-						<Record Type="UI.DataField"><PropertyValue Property="Label" String="品切理由"/><PropertyValue Property="Value" Path="opt_stk_sdi"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="品切れ理由"/><PropertyValue Property="Value" Path="opt_stk_sdi"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="累積確認済数量"/><PropertyValue Property="Value" Path="bmeng"/></Record>
 					</Collection>
 				</Annotation>
 				<Annotation Term="UI.LineItem">
 					<Collection>
-						<Record Type="UI.DataField"><PropertyValue Property="Label" String="販売伝票番号"/><PropertyValue Property="Value" Path="vbeln"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="受注伝票番号"/><PropertyValue Property="Value" Path="vbeln"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="明細番号"/><PropertyValue Property="Value" Path="posnr"/></Record>
-						<Record Type="UI.DataField"><PropertyValue Property="Label" String="レコード登録日付"/><PropertyValue Property="Value" Path="erdat"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="登録日付"/><PropertyValue Property="Value" Path="erdat"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="販売伝票タイプ"/><PropertyValue Property="Value" Path="auart"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="販売伝票タイプテキスト"/><PropertyValue Property="Value" Path="auart_nm"/></Record>
-						<Record Type="UI.DataField"><PropertyValue Property="Label" String="得意先参照（明細）"/><PropertyValue Property="Value" Path="bstkd"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="得意先発注番号(明細)"/><PropertyValue Property="Value" Path="bstkd"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="出荷先"/><PropertyValue Property="Value" Path="kunwe_sdh"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="届先倉庫"/><PropertyValue Property="Value" Path="kunz7"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="出荷先名称"/><PropertyValue Property="Value" Path="kunwe_nm"/></Record>
@@ -46,17 +46,17 @@
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="プラントテキスト"/><PropertyValue Property="Value" Path="werks_nm"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="保管場所"/><PropertyValue Property="Value" Path="lgort"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="保管場所テキスト"/><PropertyValue Property="Value" Path="lgobe"/></Record>
-						<Record Type="UI.DataField"><PropertyValue Property="Label" String="出荷日付"/><PropertyValue Property="Value" Path="wadat"/></Record>
-						<Record Type="UI.DataField"><PropertyValue Property="Label" String="納入日付"/><PropertyValue Property="Value" Path="edatu"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="出庫日付"/><PropertyValue Property="Value" Path="wadat"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="納入日程日付"/><PropertyValue Property="Value" Path="edatu"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="得意先グループ1"/><PropertyValue Property="Value" Path="kvgr1"/></Record>
-						<Record Type="UI.DataField"><PropertyValue Property="Label" String="品目"/><PropertyValue Property="Value" Path="matnr"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="品目コード"/><PropertyValue Property="Value" Path="matnr"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="品目テキスト"/><PropertyValue Property="Value" Path="maktx"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="正味額＋税"/><PropertyValue Property="Value" Path="netwr_sdi"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="値引額"/><PropertyValue Property="Value" Path="kwert_ne"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="即引"/><PropertyValue Property="Value" Path="kwert_so"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="受注数量"/><PropertyValue Property="Value" Path="kwmeng"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="在庫管理単位数量"/><PropertyValue Property="Value" Path="kwmeng2"/></Record>
-						<Record Type="UI.DataField"><PropertyValue Property="Label" String="品切理由"/><PropertyValue Property="Value" Path="opt_stk_sdi"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="品切れ理由"/><PropertyValue Property="Value" Path="opt_stk_sdi"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="累積確認済数量"/><PropertyValue Property="Value" Path="bmeng"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="発注元コード"/><PropertyValue Property="Value" Path="pocode_sdh"/></Record>
 						<Record Type="UI.DataField"><PropertyValue Property="Label" String="引合伝票番号"/><PropertyValue Property="Value" Path="vbeln_sdi"/></Record>

@@ -38,7 +38,7 @@
 							<PropertyValue Property="Value" Path="vkgrp"/>
 						</Record>
 						<Record Type="UI.DataField">
-							<PropertyValue String="当社担当" Property="Label"/>
+							<PropertyValue String="得意先グループ 1" Property="Label"/>
 							<PropertyValue Property="Value" Path="kvgr1"/>
 						</Record>
 						<Record Type="UI.DataField">
@@ -46,11 +46,11 @@
 							<PropertyValue Property="Value" Path="kunwe_sdh"/>
 						</Record>
 						<Record Type="UI.DataField">
-							<PropertyValue String="名称（１行目）" Property="Label"/>
+							<PropertyValue String="名称 1" Property="Label"/>
 							<PropertyValue Property="Value" Path="kunwe_nm"/>
 						</Record>
 						<Record Type="UI.DataField">
-							<PropertyValue String="名称（２行目）" Property="Label"/>
+							<PropertyValue String="名称 2" Property="Label"/>
 							<PropertyValue Property="Value" Path="kunwe_nm2"/>
 						</Record>
 						<Record Type="UI.DataField">
@@ -94,7 +94,7 @@
 							<PropertyValue Property="Value" Path="maktx"/>
 						</Record>
 						<Record Type="UI.DataField">
-							<PropertyValue String="当初受注数量(販売単位)" Property="Label"/>
+							<PropertyValue String="当初発注数量(販売単位)" Property="Label"/>
 							<PropertyValue Property="Value" Path="iniorder_sdi"/>
 						</Record>
 						<Record Type="UI.DataField">
@@ -110,7 +110,7 @@
 							<PropertyValue Property="Value" Path="vrkme"/>
 						</Record>
 						<Record Type="UI.DataField">
-							<PropertyValue String="プラント(自社または外部)" Property="Label"/>
+							<PropertyValue String="プラント" Property="Label"/>
 							<PropertyValue Property="Value" Path="werks"/>
 						</Record>
 						<Record Type="UI.DataField">
@@ -126,11 +126,11 @@
 							<PropertyValue Property="Value" Path="route"/>
 						</Record>
 						<Record Type="UI.DataField">
-							<PropertyValue String="出荷日付" Property="Label"/>
+							<PropertyValue String="出庫日付" Property="Label"/>
 							<PropertyValue Property="Value" Path="wadat"/>
 						</Record>
 						<Record Type="UI.DataField">
-							<PropertyValue String="納入日付" Property="Label"/>
+							<PropertyValue String="納入日程日付" Property="Label"/>
 							<PropertyValue Property="Value" Path="edatu"/>
 						</Record>
 						<Record Type="UI.DataField">
@@ -146,15 +146,15 @@
 							<PropertyValue Property="Value" Path="abgru"/>
 						</Record>
 						<Record Type="UI.DataField">
-							<PropertyValue String="FAX用品切れ案内ステータス" Property="Label"/>
-							<PropertyValue Property="Value" Path="faxsst_sdi"/>
+							<PropertyValue String="FAX用品切れ案内送信フラグ" Property="Label"/>
+							<PropertyValue Property="Value" Path="faxflg_sdi"/>
 						</Record>
 						<Record Type="UI.DataField">
 							<PropertyValue String="受注残管理フラグ" Property="Label"/>
 							<PropertyValue Property="Value" Path="zjczflg"/>
 						</Record>
 						<Record Type="UI.DataField">
-							<PropertyValue String="レコード登録日" Property="Label"/>
+							<PropertyValue String="登録日付" Property="Label"/>
 							<PropertyValue Property="Value" Path="ap_erdat"/>
 						</Record>
 						<Record Type="UI.DataField">
